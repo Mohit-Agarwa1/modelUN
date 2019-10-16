@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47794848-2"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47794848-2');
+  </script>
+  <meta charset="utf-8">
+  <title>Mohit Agarwal</title>
+  <link rel="stylesheet" href="time.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.10/p5.js"></script>
+  <script src="sketch.js"></script>
+  <script>
+  function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+  }
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+</script>
+</head>
+
+<body style="text-align:center; margin-top:50px; background:#111; padding-bottom:10px;"; onload="startTime()">
+
+  <div>
+
+    <h1>
+    Mohit Education
+    </h1>
+    <a href="./time2.html" class="button">Main Page</a>
+    <a href="./login.html" class="button">Login</a>
+  </div>
+  <h2>
+  Time in London
+  <div id="txt"></div>
+  </h2>
+
+</body>
+
+</html>

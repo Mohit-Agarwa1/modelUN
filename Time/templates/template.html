@@ -1,0 +1,25 @@
+<style>
+input{
+ background-color: #3CBC8D;
+ color: white;
+}
+</style>
+<form method="POST">
+    <input name="text">
+    <input type="submit">
+</form>
+
+<textarea name="inp_mess"></textarea>
+<input type="submit">
+
+<script>
+
+$.ajax({
+  type: "POST",
+  url: "~/server.py",
+  data: { param: text}
+}).done(function( o ) {
+   // do something
+});
+
+</script>

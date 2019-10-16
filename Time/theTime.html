@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47794848-2"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47794848-2');
+  </script>
+  <meta charset="utf-8">
+  <title>Revolving Sphere</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.10/p5.js"></script>
+  <script src="sketchSphere.js"></script>
+  <link rel="stylesheet" href="time.css">
+  <script>
+  function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+  }
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+</script>
+</head>
+
+<body style="text-align:center; margin:20px 0; background-color:#f0f1eb" onload="startTime()">
+  <div id="txt" style="padding-bottom:0px; padding-top:50px;font-family: 'Montserrat', sans-serif; font-weight: 300; color: black;font-size: 163px;"></div>
+  <div id="sketch" style="padding-topL0px;text-align:lefts; padding:0px;"></div>
+
+
+</body>
+
+</html>

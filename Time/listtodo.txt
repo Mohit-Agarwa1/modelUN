@@ -1,0 +1,11 @@
+APP:
+
+Email client
+SEND CODES
+SEND MESSAGE
+ask people of opinion
+Check for spellings
+Keygen
+list listusers
+make user guide
+FIX LINES 122-163 in app.py, LARGE ISSUES;; LARGE CLEANUP REQUIRED
