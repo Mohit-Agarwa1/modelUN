@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47794848-2"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-47794848-2');
+  </script>
+  <meta charset="utf-8">
+  <title>Revolving Sphere</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.10/p5.js"></script>
+  <script src="sketchSpherecopy.js"></script>
+  <link rel="stylesheet" href="time.css">
+  <script>
+  function windowClose() {
+  window.open('','_parent','');
+  window.close();
+  }
+  </script>
+</head>
+
+<body style="text-align:center; margin-top:50px; background:#111; padding-bottom:10px;"; onload="startTime()">
+
+  <div>
+
+    <h1>
+    ASCII ART
+    </h1>
+    <a href="./insert.html" class="button">Insert RLE</a>
+    <a href="./display.html" class="button">Display ASCII Art</a>
+    <a href="./display.html" class="button">Decode RLE</a>
+    <a href="./display.html" class="button">Encode ASCII Art</a>
+    <a href="./close.html" class="button">Quit</a>
+
+  </div>
+
+</body>
+
+</html>
